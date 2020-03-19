@@ -13,14 +13,14 @@ import { AppComponent } from './app.component';
   // entryComponents: [AppComponent]
 })
 export class AppModule {
-  // constructor(private injector: Injector, private ngZone: NgZone) {
-  //   (window as any).ngZone = this.ngZone;
-  // }
+  constructor(private injector: Injector, private ngZone: NgZone) {
+    (window as any).ngZone = this.ngZone;
+  }
 
-  // ngDoBootstrap() {
-  //   const elm = createCustomElement(AppComponent, {
-  //     injector: this.injector
-  //   }) as any;
-  //   customElements.define('my-app1', elm);
-  // }
+  ngDoBootstrap() {
+    const elm = createCustomElement(AppComponent, {
+      injector: this.injector
+    }) as any;
+    customElements.define('my-app', elm);
+  }
 }

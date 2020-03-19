@@ -4,14 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall:bak": "",
-    "postinstall": "ngcc",
-    "build:externals": "ng build --extra-webpack-config webpack.externals.js --prod --single-bundle",
-    "build:MicroApp1:externals": "ng build --extra-webpack-config webpack.externals.js --prod --project MicroApp1 --single-bundle"
+    "build:single": "ng build --prod --single-bundle",
+    "build:extracted": "ng build --extra-webpack-config webpack.externals.js --prod --single-bundle"
+  },
+  "author": {
+    "name": "Akshay Rajput",
+    "email": "akshay.rajput5394@gmail.com"
   },
   "private": true,
   "dependencies": {
@@ -24,16 +25,8 @@
     "@angular/platform-browser": "~9.0.2",
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
-    "@bit/orxe_3.base.accordion": "^0.2.4",
-    "@bit/orxe_3.base.card": "^0.2.2",
-    "@bit/orxe_3.base.counter": "^0.2.3",
-    "@bit/orxe_3.base.rating-bar": "^0.2.10",
-    "@orxe-sdk/http": "^1.0.0",
     "@webcomponents/webcomponentsjs": "^2.4.1",
-    "compression": "^1.7.2",
-    "cors": "^2.8.4",
     "document-register-element": "^1.7.2",
-    "express": "^4.16.3",
     "ngx-build-plus": "^9.0.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

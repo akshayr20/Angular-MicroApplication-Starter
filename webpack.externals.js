@@ -8,10 +8,6 @@ module.exports = {
         "@angular/platform-browser": "ng.platformBrowser",
         "@angular/platform-browser-dynamic": "ng.platformBrowserDynamic",
         "@angular/compiler": "ng.compiler",
-        "@angular/elements": "ng.elements",
-
-        // Uncomment and add to scripts in angular.json if needed
-        // "@angular/router": "ng.router",
-        // "@angular/forms": "ng.forms"
+        "@angular/elements": "ng.elements"
     }
 }

@@ -21,14 +21,14 @@ const hotel = express();
 const DIST_FOLDER = path.join(process.cwd(), 'dist');
 
 
-hotel.get('*', express.static(path.join(DIST_FOLDER, 'MicroApp1')));
+hotel.get('*', express.static(path.join(DIST_FOLDER, 'MicroApp')));
 hotel.get('*', (req, res) => {
-	res.sendFile(path.join(DIST_FOLDER, 'MicroApp1') + '/index.html');
+	res.sendFile(path.join(DIST_FOLDER, 'MicroApp') + '/index.html');
 });
 
 app.use('/hotel/', hotel);
 
-app.use(express.static(path.join(DIST_FOLDER, 'MicroApp1')));
+app.use(express.static(path.join(DIST_FOLDER, 'MicroApp')));
 
 app.listen(process.env.PORT || 4200, function() {
 	console.log(
