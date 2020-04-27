@@ -8,7 +8,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:single": "ng build --prod --single-bundle",
-    "build:extracted": "ng build --extra-webpack-config webpack.externals.js --prod --single-bundle"
+    "build:extracted": "ng build --extra-webpack-config webpack.externals.js --prod --single-bundle",
+    "postinstall:bak": "",
+    "postinstall": "ngcc",
+    "build:externals": "ng build --extra-webpack-config webpack.externals.js --prod --single-bundle",
+    "build:MicroApp:externals": "ng build --extra-webpack-config webpack.externals.js --prod --project MicroApp --single-bundle"
   },
   "author": {
     "name": "Akshay Rajput",

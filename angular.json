@@ -45,7 +45,9 @@
               "node_modules/@angular/compiler/bundles/compiler.umd.js",
               "node_modules/@angular/elements/bundles/elements.umd.js",
               "node_modules/@angular/platform-browser/bundles/platform-browser.umd.js",
-              "node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"
+              "node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js",
+              "node_modules/@angular/common/bundles/common-http.umd.js",
+              "node_modules/@angular/router/bundles/router.umd.js"
             ]
           },
           "configurations": {
@@ -141,5 +143,8 @@
       }
     }
   },
-  "defaultProject": "MicroApp"
+  "defaultProject": "MicroApp",
+  "cli": {
+    "analytics": "b6faf9fb-4ce9-4844-9db6-297397d33475"
+  }
 }
